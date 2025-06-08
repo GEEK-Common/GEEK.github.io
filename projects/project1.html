@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目一：面向机器人科学家实验系统的旋盖机设计与实现</title>
+    <!-- 关键点：链接到上一级目录的 style.css -->
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <!-- 让Logo链接回主页 -->
+            <h1 class="logo"><a href="../index.html" style="color: inherit;">Robotics</a></h1>
+            <nav>
+                <ul>
+                    <!-- 链接回主页的锚点 -->
+                    <li><a href="../index.html#about">关于我</a></li>
+                    <li><a href="../index.html#projects">项目</a></li>
+                    <li><a href="../index.html#contact">联系我</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-detail">
+            <div class="container">
+                <!-- 项目标题 -->
+                <div class="project-detail-header">
+                    <h2>项目一：面向机器人科学家实验系统的旋盖机设计与实现</h2>
+                    <p>毕业设计</p>
+                </div>
+                
+               <!-- 在包裹图片的父元素上添加 text-align 属性 -->
+                 <div class="container" style="text-align: center;">
+                <img src="images/image2.jpg" alt="示例图片" width="1000" height="400">
+                  </div>
+                
+                <!-- 项目详细介绍 -->
+                <h3>项目介绍</h3>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;生化实验操作繁琐、耗时且精细，以及存在试剂污染和人员暴露风险，机器人科学家实验系统是破解这些困境的解决方案。试剂瓶的自动开盖与关盖是机器人科学家实验系统实现试剂转移的关键环节。为实现多规格试剂瓶的自动旋盖，本文设计了一种高兼容性的智能旋盖机。首先，通过创新性地耦合曲柄滑块机构与平行四边形机构，设计了双侧对称夹爪机构，支持动态调节夹持范围；以及集成丝杆螺母机构与云台电机，实现了旋转运动与直线运动的双自由度同步控制。其次，基于运动学建模与静力学分析，推导了夹爪末端轨迹方程及夹紧力控制规律。同时，基于力反馈闭环PID控制策略，可实时调节夹爪对瓶盖的夹紧力。此外，基于深度学习方法，通过视觉目标检测算法识别不同种类的试剂瓶，以确定其规格参数，保证开关盖操作执行的稳定性和可靠性。最后，实验验证了该旋盖机对实验室常规试剂瓶的广泛兼容性，开盖和关盖成功率为99%，为机器人科学家实验系统提供了可靠的模块支持，显著提升实验室自动化程度。
+                </p>
+                <h3>项目成果</h3>
+                 <p>
+                 &bull;&nbsp;&nbsp;会议论文：Design and Implementation of a Screw-Capping Machine for Robotic Scientist Experimental Systems 
+                </p>
+                 <p>
+                  &nbsp;&nbsp;&nbsp;投稿至国际机器人领域顶会IROS（IEEE/RSJ International Conference on Intelligent Robots and Systems）
+                    </p>
+                  <p>
+                 &bull;&nbsp;&nbsp; 担任国际机器人领域顶会IROS独立审稿人
+                   </p>
+                  <p>
+                 &bull;&nbsp;&nbsp;发明专利：一种具有视觉和触觉识别功能的智能开瓶机及开关瓶方法&nbsp;&nbsp;&nbsp;公开号：CN119954076A          
+                </p>
+
+                <h3>关键技术</h3>
+                <ul class="tech-stack">
+                    <li>机械设计</li>
+                    <li>电机控制</li>
+                    <li>深度学习</li>
+                    <li>目标检测</li>
+                    <li>触觉信号处理</li>
+                    <li>力控</li>
+                </ul>
+
+                <a href="../index.html#projects" class="btn">返回项目列表</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 冯武祎. 保留所有权利。</p>
+        </div>
+    </footer>
+
+</body>
+</html>
