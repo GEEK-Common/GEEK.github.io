@@ -265,3 +265,78 @@ section h3 {
     font-size: 0.9rem;
     font-weight: 500;
 }
+/* --- 自定义音乐播放器样式 --- */
+.custom-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.player-btn:hover {
+    background-color: #2980b9; /* 悬停时颜色变深 */
+}
+
+.progress-container {
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.progress {
+    background-color: var(--primary-color);
+    width: 0%; /* 初始宽度为0 */
+    height: 100%;
+    border-radius: 5px;
+}
+/* --- 歌词显示样式 --- */
+.lyrics-display {
+    text-align: center; /* 让歌词居中显示 */
+    color: var(--light-color); /* 使用浅色文字，因为页脚是深色的 */
+    margin-bottom: 30px; /* 在歌词和播放器之间增加一些间距 */
+    font-family: 'Georgia', 'Times New Roman', serif; /* 使用衬线字体，更有感觉 */
+    font-style: italic; /* 整体设为斜体 */
+}
+
+.lyrics-display p {
+    margin: 5px 0; /* 调整歌词行与行之间的间距 */
+    font-size: 1.1rem; /* 设置歌词的字体大小 */
+    line-height: 1.5; /* 增加行高，让文字不那么拥挤 */
+}
+
+.lyrics-display cite {
+    display: block; /* 让 <cite> 标签独占一行 */
+    margin-top: 15px; /* 在歌词和歌曲名之间增加间距 */
+    font-size: 0.9rem; /* 让歌曲名小一点 */
+    color: var(--gray-color); /* 使用灰色，不那么突出 */
+    font-style: normal; /* 取消浏览器默认给 cite 加的斜体，因为我们已经在父元素设置了 */
+}
+
+/* 调整版权文本的上边距，让它离播放器远一点 */
+.copyright-text {
+    margin-top: 30px;
+}
