@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>孤门的个人主页</title>
     <link rel="stylesheet" href="style.css">
+     <!-- ... 其他 head 内容 ... -->
+    <!-- Font Awesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -124,7 +128,24 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
+         <div class="container">
+ <!-- 新增的歌词显示区域 -->
+        <div class="lyrics-display">
+            <p>男子汉就应该为别人而变得坚强</p>
+            <p>咬紧牙关，坚守到底</p>
+            <p>倒下了也没关系，再站起来就可以了</p>
+            <p>只要能做到这点</p>
+            <p>就是英雄啊</p>
+            <cite>— 英雄 Nexus</cite>
+        </div>
+        <!-- 自定义播放器 -->
+        <div class="custom-player">
+            <audio id="music-player" src="audio/my-music.mp3"></audio>
+            <button id="play-pause-btn" class="player-btn"><i class="fas fa-play"></i></button>
+            <div class="progress-container">
+                <div id="progress-bar" class="progress"></div>
+            </div>
+        </div>
             <p>© 2025 COMMON. 保留所有权利。</p>
         </div>
     </footer>
